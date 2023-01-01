@@ -9578,6 +9578,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 /* Bulma Layout */
 .hero {
+  
   align-items: stretch;
   display: flex;
   flex-direction: column;
