@@ -236,6 +236,7 @@ fieldset[disabled] .file-name, fieldset[disabled] .select select, .select fields
 
 /* Bulma Base */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+
 html,
 body,
 p,
@@ -547,6 +548,11 @@ a.box:active {
 .button.is-ghost:hover, .button.is-ghost.is-hovered {
   color: hsl(229deg, 53%, 53%);
   text-decoration: underline;
+}
+.button.is-slime {
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(49, 165, 34);
+  color: rgb(38, 255, 0);
 }
 .button.is-white {
   background-color: hsl(0deg, 0%, 100%);
