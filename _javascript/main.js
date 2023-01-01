@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         $('.hero.is-strongslime').css({
         opacity: function() {
             var elementHeight = $(this).height(),
-            opacity = ((elementHeight - scrollTop) / elementHeight - 0.1);
+            opacity = ((elementHeight - scrollTop) / elementHeight - 0.15);
             return opacity;
         }
     });
