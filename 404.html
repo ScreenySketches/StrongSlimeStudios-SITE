@@ -5,39 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/x-icon" href="images/favicon_404.png">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
         body{
-            background-image: url("https://images.unsplash.com/photo-1616235132417-99f443954d2e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+            background-image: linear-gradient(rgb(24, 131, 24), black);
             background-size: cover;
             font-family: 'Roboto', 'sans-serif';
         }
         main{
             display: flex;
-            height: 100vh;
+            height: 75vh;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
         .header404{
-            font-family: 'Chango', cursive;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 48px;
+            font-weight: 100;
+            color: white;
         }
         .content404{
             text-align: center;
+            margin-top: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+        .level {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border-style: solid;
+            border-radius: 20px;
+            border-color: black;
+            background-image: linear-gradient(black, rgb(0, 41, 0));
+        }
+        section.has-bg{
+            background-image: linear-gradient(black, rgb(24, 131, 24));
+        }
+        .button.custom-fill{
+            background-color: green;
+            color: black;
+            margin-top: 30px;
+        }
+        .icon{
+            color: black;
         }
     </style>
 </head>
 <body>
+    <section class="has-bg">
+        <nav class="level is-topnav">
+          <li class="level-item has-text-centered">
+            <a href="index.html"><button class="button is-slime active">Home</button></a>
+          </li>
+          <li class="level-item has-text-centered">
+            <a href="pages/games.html"><button class="button is-slime">Games</button></a>
+          </li>
+          <li class="level-item has-text-centered">
+            <a href="index.html"> <img src="images/logoTEXT.png" alt="" style="height: 50px;"></a>
+          </li>
+          <li class="level-item has-text-centered">
+            <a href="pages/about.html"><button class="button is-slime">About</button></a>
+          </li>
+          <li class="level-item has-text-centered">
+            <a href="pages/contact.html"><button class="button is-slime">Contact</button></a>
+          </li>
+        </nav>
+      </section>
+
     <main>
         <h4 class="header404">404</h4>
-        <div class="content-404">
-            Uh-oh! We couldn't find the page you are looking for.
+        <div>
+            <p class="content404">
+                Uh-oh! We couldn't find the page you're looking for.
+            </p>
         </div>
         <p>
-            <a href="/">Check our home page</a>
+            <a href="index.html">
+              <button class="button is-slime custom-fill">
+                <div class="icon-text">
+                    <span class="icon">
+                      <i class="fas fa-home"></i>
+                    </span>
+                    <span>Home</span>
+                  </div>
+              </button>
+            </a>
         </p>
     </main>
+
+    <footer class="footer is-slime">
+        <p class="is-white">
+          © 2023 by StrongSlimeStudios
+        </p>
+      </footer>
     
 </body>
 </html>
