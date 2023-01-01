@@ -447,6 +447,7 @@ table th {
   color: hsl(0deg, 0%, 21%);
 }
 
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -3991,6 +3992,13 @@ button.dropdown-item.is-active {
 .level img {
   display: inline-block;
   vertical-align: top;
+}
+.level.is-topnav button:hover{
+color: white;
+border-color: white;
+}
+.level.is-topnav button:active {
+  background-color: green;
 }
 .level.is-mobile {
   display: flex;
@@ -10334,4 +10342,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 html {
   background-color: hsl(153deg, 53%, 53%);
+}
+
+
+
+.button:is(:link, :active, :visited).active {
+  background-color: green;
+}
+
+.footer.is-slime {
+  background-color: black;
+}
+
+p.is-white{
+  color: white;
 }
