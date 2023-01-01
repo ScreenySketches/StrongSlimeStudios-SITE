@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
 
 
-  $(window).scroll(function() {
+  $(window).on('scroll', function() {
     var scrollTop = $(this).scrollTop();
   
         $('.hero.is-strongslime').css({
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const activePage = window.location.pathname;
   const navLinks = document.querySelectorAll(nav, a).forEach
 
-  
+
   
 });
 
