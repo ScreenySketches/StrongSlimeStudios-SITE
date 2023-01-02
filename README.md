@@ -1,5 +1,9 @@
 
+## CREDIT :
 
+Devs: Screeny
+
+Testers: Chaos
 
 Made with BULMA
 
