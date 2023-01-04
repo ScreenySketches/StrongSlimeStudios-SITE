@@ -555,6 +555,11 @@ a.box:active {
   border-color: rgb(49, 165, 34);
   color: rgb(38, 255, 0);
 }
+
+.button.is-nav {
+  width: 120px;
+}
+
 .button.is-white {
   background-color: hsl(0deg, 0%, 100%);
   border-color: transparent;
@@ -1944,6 +1949,10 @@ div.icon-text {
 .image.is-128x128 {
   height: 128px;
   width: 128px;
+}
+.image.is-200x200 {
+  height: 200px;
+  width: 200px;
 }
 
 .notification {
@@ -10344,12 +10353,6 @@ html {
   background-color: hsl(153deg, 53%, 53%);
 }
 
-
-
-.button:is(:link, :active, :visited).active {
-  background-color: green;
-}
-
 .footer.is-slime {
   background-color: black;
 }
@@ -10417,4 +10420,23 @@ p.is-white{
 
   
 }  
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(25%);
+  transition: all 1100ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
 
