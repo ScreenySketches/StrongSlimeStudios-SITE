@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Welcome</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="icon" type="image/x-icon" href="images/favicon.png">
+      <link rel="stylesheet" href="css/main.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Chango&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+      <style>
+        body{
+        background-image: radial-gradient(green, black);
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        }
+        html{
+          overflow: hidden;
+          
+        }
+        .box.is-bg {
+            background-color: rgba(255, 255, 255, 0.223);
+            margin: 100px;
+            width: inherit;
+            height: inherit;
+            
+        }
+        .is-white {
+            color: white;
+        }
+        .container {
+            max-width: 2000px;
+            height: 75vh;
+            
+        }
+        .has-hover:hover {
+            scale: 107%;
+            transition: 400ms;
+        }
+        .has-hover {
+            scale: initial;
+            transition: 500ms;
+        }
+        .has-hover:active {
+            scale: 90%;
+            transition: 200ms;
+        }
+     </style>
+
+  </head>
+
+  
+
+  <body>
+    <div id="wrapper"></div>
+    <div class="container is-max-desktop" >
+        <div class="box is-bg">
+          <div class="has-text-centered">
+            <h1 class="title" style="color: white;">Welcome to the Official</h1>
+            <img draggable="false" src="images/logoTEXT.png" alt="StrongSlimeStudios">
+            <div>
+                <img draggable="false" class="has-hover" src="images/StrSlime-2.png" alt="Logo" style="width: auto; height: 250px;">
+            </div>
+            <h2 class="title" style="color: white;">Site!</h2>
+            <a href="pages/home.html"><button class="button has-hover" style="background-color: rgba(146, 146, 146, 0.223); color: lime; border: 3px; border-color: rgb(0, 200, 10); border-style: solid;">Continue to Home Page</button></a>
+          </div>
+        </div>
+      </div>
+  </body>
+
+</html>
