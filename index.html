@@ -18,6 +18,7 @@
         bottom:0;
         left:0;
         right:0;
+        display: flex;
         }
         html{
           overflow: hidden;
@@ -28,15 +29,18 @@
             margin: 100px;
             width: inherit;
             height: inherit;
+            justify-content: center;
+            justify-self: center;
+            align-self: center;
             
         }
         .is-white {
             color: white;
         }
         .container {
-            max-width: 2000px;
             height: 75vh;
-            
+            -ms-flex-align: center;
+            justify-self: center;
         }
         .has-hover:hover {
             scale: 107%;
@@ -49,6 +53,13 @@
         .has-hover:active {
             scale: 90%;
             transition: 200ms;
+        }
+        @media(max-width: 768px){
+            .box.is-bg{
+                margin: auto;
+                margin-top: 90px;
+                
+            }
         }
      </style>
 
@@ -64,7 +75,7 @@
             <h1 class="title" style="color: white;">Welcome to the Official</h1>
             <img draggable="false" src="images/logoTEXT.png" alt="StrongSlimeStudios">
             <div>
-                <img draggable="false" class="has-hover" src="images/StrSlime-2.png" alt="Logo" style="width: auto; height: 250px;">
+                <img draggable="false" class="has-hover" src="images/StrSlime-2.png" alt="Logo" style="width: auto; height: auto;">
             </div>
             <h2 class="title" style="color: white;">Site!</h2>
             <a href="pages/home.html"><button class="button has-hover" style="background-color: rgba(146, 146, 146, 0.223); color: lime; border: 3px; border-color: rgb(0, 200, 10); border-style: solid;">Continue to Home Page</button></a>
