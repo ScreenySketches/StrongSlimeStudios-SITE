@@ -1950,7 +1950,7 @@ div.icon-text {
   height: 128px;
   width: 128px;
 }
-.image.is-200x200 {
+.image.is-thumbnail {
   height: 200px;
   width: 200px;
 }
@@ -10378,6 +10378,10 @@ p.is-white{
 
 
 @media (max-width: 769px) {
+  .image.is-thumbnail {
+    height: 128px;
+    width: 128px;
+  }
   .level.is-topnav button.is-slime {
     width: 250px;
     height: 50px;
