@@ -26,7 +26,6 @@
         }
         .box.is-bg {
             background-color: rgba(255, 255, 255, 0.223);
-            margin: 100px;
             width: inherit;
             height: inherit;
             justify-content: center;
@@ -36,11 +35,6 @@
         }
         .is-white {
             color: white;
-        }
-        .container {
-            height: 75vh;
-            -ms-flex-align: center;
-            justify-self: center;
         }
         .has-hover:hover {
             scale: 107%;
@@ -54,34 +48,39 @@
             scale: 90%;
             transition: 200ms;
         }
-        @media(max-width: 768px){
-            .box.is-bg{
-                margin: auto;
-                margin-top: 90px;
-                
-            }
+        .is-vcentered {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        .container {
+          margin: auto;
         }
      </style>
 
   </head>
 
-  
 
   <body>
-    <div id="wrapper"></div>
-    <div class="container is-max-desktop" >
-        <div class="box is-bg">
-          <div class="has-text-centered">
-            <h1 class="title" style="color: white;">Welcome to the Official</h1>
-            <img draggable="false" src="images/logoTEXT.png" alt="StrongSlimeStudios">
-            <div>
+    <div id="wrapper" class="container is-full">
+      <section class="section">
+        <div class="container is-max-widescreen">
+          <div class="columns">
+            <div class="column">
+              <div class="box is-bg has-text-centered">
+                <h1 class="title" style="color: white;">Welcome to the Official</h1>
+                <img draggable="false" src="images/logoTEXT.png" alt="StrongSlimeStudios">
                 <img draggable="false" class="has-hover" src="images/StrSlime-2.png" alt="Logo" style="width: auto; height: auto;">
+                <h2 class="title" style="color: white;">Site!</h2>
+                <a href="pages/home.html"><button class="button has-hover" style="background-color: rgba(146, 146, 146, 0.223); color: lime; border: 3px; border-color: rgb(0, 200, 10); border-style: solid;">Continue to Home Page</button></a>
+              </div>
             </div>
-            <h2 class="title" style="color: white;">Site!</h2>
-            <a href="pages/home.html"><button class="button has-hover" style="background-color: rgba(146, 146, 146, 0.223); color: lime; border: 3px; border-color: rgb(0, 200, 10); border-style: solid;">Continue to Home Page</button></a>
           </div>
         </div>
-      </div>
+      </section>
+    </div>
   </body>
+
+  
 
 </html>
