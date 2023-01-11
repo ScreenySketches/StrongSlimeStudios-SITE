@@ -10388,6 +10388,7 @@ p.is-white{
     position: relative;
   }
   .level.is-topnav {
+    justify-content: center;
     display: grid;
     margin: auto;
     grid-template-columns: repeat((3), 1fr);
