@@ -5,7 +5,7 @@ Devs: Screeny
 
 Testers: Chaos
 
-Made with BULMA
+Made with BULMA Framework
 
 ## BULMA Copyright and license
 
