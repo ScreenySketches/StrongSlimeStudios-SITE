@@ -555,9 +555,16 @@ a.box:active {
   border-color: rgb(49, 165, 34);
   color: rgb(38, 255, 0);
 }
+.button.is-slime-big {
+  background-color: rgb(26, 255, 0);
+  border-color: rgb(7, 60, 0);
+  color: rgb(0, 1, 0);
+  font-weight: 600;
+}
 
 .button.is-nav {
   width: 120px;
+  font-weight: 600;
 }
 
 .button.is-white {
