@@ -10446,3 +10446,26 @@ p.is-white{
   }
 }
 
+#topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Set a higher z-index value to keep the navigation on top */
+  transition: background-color 0.3s ease;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 25px;
+}
+
+.bg-scroll {
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the background color and opacity as needed */
+}
+
+@media (max-width: 768px) {
+  #topnav {
+    position: static; /* Set position to static for mobile devices */
+    border-radius: 0; /* Optional: Remove border-radius for mobile devices */
+    border: none; /* Optional: Remove border for mobile devices */
+    z-index: auto; /* Optional: Reset z-index for mobile devices */
+  }
+}
