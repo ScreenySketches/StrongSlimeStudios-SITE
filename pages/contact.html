@@ -5,21 +5,26 @@
 		<title>Contact</title>
         <link rel="icon" type="./image/x-icon" href="../images/favicon.png">
         <link rel="stylesheet" href="../css/main.css">
-        <script defer src="../_javascript/main.js"></script>
+        <script defer src="../lib/main.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     </head>
 
     <style>
         html {
             background-color: black;
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(5,59,0,1) 84%, rgba(12,127,0,1) 92%, rgba(0,154,11,1) 100%);
         }
         .level {
           padding-top: 25px;
+        }
+        .dummy.spacer-1 {
+          height: 5px;
         }
     </style>
 
     <body>
         <section>
-          <nav class="level is-topnav">
+          <div class="level is-topnav" id="topnav">
             <li class="level-item has-text-centered">
               <a href="../pages/home.html"><button class="button is-slime is-nav">Home</button></a>
             </li>
@@ -35,7 +40,18 @@
             <li class="level-item has-text-centered">
               <a href="../pages/contact.html"><button class="button is-slime is-nav">Contact</button></a>
             </li>
-          </nav>
+          </div>
+
+          <div class="dummy hero-footer"></div>
         </section>
+
+        <section>
+          <div class="container" style="text-align: center;">
+            <iframe src="https://gamejolt.com/p/we-need-your-help-modellers-composers-possibly-va-s-and-coders-79rwrsuk" frameborder="0" width="800px" height="900px" scrolling="no"></iframe>
+          </div>
+        </section>
+
+        
+        
     </body>
 </html>
